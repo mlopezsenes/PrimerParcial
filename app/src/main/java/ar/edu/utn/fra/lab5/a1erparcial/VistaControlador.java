@@ -5,4 +5,5 @@ package ar.edu.utn.fra.lab5.a1erparcial;
  */
 
 public class VistaControlador {
+    //TODO: Traer del Main lo necesario para usar MVC
 }

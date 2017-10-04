@@ -7,7 +7,7 @@ import java.util.List;
  */
 
 public class Controlador {
-
+    //TODO: Traer del Main lo necesario para usar MVC
     List<Modelo> contactos;
 
 

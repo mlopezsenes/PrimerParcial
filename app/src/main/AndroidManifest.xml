@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ar.edu.utn.fra.lab5.a1erparcial">
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
 
     <application
         android:allowBackup="true"

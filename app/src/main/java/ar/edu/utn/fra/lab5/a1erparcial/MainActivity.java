@@ -23,7 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ItemClickListener, View.OnClickListener{
 
-    /*
+    /*TODO:
     * 1.- Completar lo necesario para que compile
     *   a.- Strings.xml
     *   b.- Crear menu.xml
@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     *   b.- realizar al menos 1 commit con la leyenda "entrega 1er Parcial, Alumno: Nombre y Apellido
     */
 
+
+    //TODO: Limpiar MainActivity, pasando lo necesario a las clases Controlador y VistaControlador para usar MVC
     Adapter adaptador;
     ImageView imgContacto;
     TextView main_nombre;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         imgContacto= (ImageView) this.findViewById(R.id.vh_img);
         main_nombre = (TextView) this.findViewById(R.id.main_nombre);
@@ -88,13 +91,13 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
 
     @Override
     public void onItemClick(View view, int position) {
-        this.main_nombre.setText(contactos.get(position).getNombre().toString());
-        this.main_telefono.setText(contactos.get(position).getTelefono().toString());
+        //TODO: Setear Textos
     }
 
     @Override
     public void onClick(View v) {
-        Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+this.main_telefono.getText()));
+        //TODO: completar lo que falta
+
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 0);
         }else{
@@ -104,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
+        //TODO: Cargar menu desde archivo xml
         return true;
     }
 
@@ -112,10 +115,10 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.salir:
-                this.finish();
+                //TODO: Completar para salir de la aplicacion
                 break;
             case R.id.nuevo:
-                Log.d("Menu:","Nuevo contacto");
+                //TODO: mostrar texto por consola
                 break;
         }
         return super.onOptionsItemSelected(item);

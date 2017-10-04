@@ -33,14 +33,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
+                android:text="Completar con: Nombre"
                 android:id="@+id/main_nombre"
                 android:textSize="20dp"
                 android:textAlignment="center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="Completar"
                 android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/main_telefono"
                 android:textSize="40dp"
@@ -49,7 +49,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Llamar"
+            android:text="Completar con:Llamar"
             android:id="@+id/btn_llamar"/>
 </LinearLayout>
 

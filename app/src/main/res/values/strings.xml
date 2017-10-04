@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">1° Parcial</string>
-    <string name="nombre">nombre</string>
-    <string name="apellido">apellido</string>
-    <string name="telefono">4444-4444</string>
 </resources>

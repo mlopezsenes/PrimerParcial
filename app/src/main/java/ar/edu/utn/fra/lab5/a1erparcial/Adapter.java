@@ -22,31 +22,26 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder>{
     public Adapter(Context context, List<Modelo> modelo, ItemClickListener listener) {
         this.mLInflater = LayoutInflater.from(context);
         this.contactos = modelo;
+        //TODO: Crear Interface ItemClickListener
         this.listener = listener;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = mLInflater.inflate(R.layout.holder,parent,false);
-        ViewHolder vh = new ViewHolder(v, listener);
-        return vh;
+        //TODO: completar lo que falta
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.nombre.setText(contactos.get(position).getNombre());
-        holder.apellido.setText(contactos.get(position).getApellido());
-        holder.telefono.setText(contactos.get(position).getTelefono());
+        //TODO: completar lo que falta
 
 
     }
 
     @Override
     public int getItemCount() {
-        return this.contactos.size();
+        //TODO: completar lo que falta
     }
 
-    public Modelo getModeloPosition(int position) {
-        return this.contactos.get(position);
-    }
+
 }

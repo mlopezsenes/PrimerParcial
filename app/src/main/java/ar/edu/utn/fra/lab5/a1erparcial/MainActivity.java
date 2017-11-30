@@ -23,21 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ItemClickListener, View.OnClickListener{
 
-    /*
-    * 1.- Completar lo necesario para que compile
-    *   a.- Strings.xml
-    *   b.- Crear menu.xml
-    *   c.- crear Interface
-    * 2.- Adaptar codigo usando MVC (mover lo que no debe estar en MainActivity)
-    * 3.- Completar metodos OnCreate y OnBind del Adapter
-    * 4.- Menu
-    *   a.- Completar opciones del menu "opcion a" y "salir"
-    *   b.- Dar funcionalidad a los botones
-    * 5.- Usar Intent para llamar por telefono.
-    * 6.- Uso de GIT:
-    *   a.- Bajar y subir cambios de/a github
-    *   b.- realizar al menos 1 commit con la leyenda "entrega 1er Parcial, Alumno: Nombre y Apellido
-    */
+
 
     Adapter adaptador;
     ImageView imgContacto;
@@ -58,24 +44,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         btn_llamar.setOnClickListener(this);
 
         contactos = new ArrayList<Modelo>();
-        contactos.add(new Modelo("Juan", "Garcia", "4444-4444"));
-        contactos.add(new Modelo("Pablo", "Lopez", "5555-45554"));
-        contactos.add(new Modelo("Ricardo", "Perez", "4124-1234"));
-        contactos.add(new Modelo("Raul", "Garnica", "4123-43244"));
-        contactos.add(new Modelo("Roberto", "Rossi", "1251-5123"));
-        contactos.add(new Modelo("Julieta", "H.", "5324-1252"));
-        contactos.add(new Modelo("Gabriel", "Veracruz", "1225-5423"));
-        contactos.add(new Modelo("Martin", "Paez", "4444-4124"));
-        contactos.add(new Modelo("Adrian", "Stocombo", "4444-1251"));
-        contactos.add(new Modelo("Walter", "Lilope", "4444-1524"));
-        contactos.add(new Modelo("Teodoro", "Tarcuro", "4444-1252"));
-        contactos.add(new Modelo("Celia", "Curro", "2314-1521"));
-        contactos.add(new Modelo("Belen", "Paz", "1523-4444"));
-        contactos.add(new Modelo("Tomas", "Tarifa", "3125-6234"));
-        contactos.add(new Modelo("Jazmin", "Solano", "1252-6234"));
-        contactos.add(new Modelo("Nicolas", "trejo", "2634-2346"));
-        contactos.add(new Modelo("Osvaldo", "Ramallo", "7345-4444"));
-        contactos.add(new Modelo("Alfredo", "Garcia", "2364-2346"));
+        //TODO traer los datos del servidor
 
         RecyclerView rv = (RecyclerView)this.findViewById(R.id.rv1);
         rv.setLayoutManager(new GridLayoutManager(this,2));
@@ -116,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
                 break;
             case R.id.nuevo:
                 Log.d("Menu:","Nuevo contacto");
+                //TODO mostar un mensaje si puede ejecutar esta accion o no
                 break;
         }
         return super.onOptionsItemSelected(item);
